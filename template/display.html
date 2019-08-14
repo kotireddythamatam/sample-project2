@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      body{
+        background: #12ad88;
+        text-align: center;
+      }
+      td{
+        padding: 10px;
+      }
+      table{
+        border-collapse: collapse;
+        width: 20%;
+        border: 10px groove green;
+        border-radius: 11%;
+        color: red;
+        font-size: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 40%;
+        height: 90%;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1 style="background:violet"><span style="color:blue;">multiplication<span> <mark>table<mark></h1>
+      <table border="1" background="{% static 'images/water.jpg' %}">
+        {% for p in f %}
+        <tr>
+          <td>{{ e }}</td>
+          <td>*{{ p }}=</td>
+          <td>{% widthratio e 1 p %}</td>
+        </tr>
+        {% endfor %}
+      </table>
+  </body>
+</html>

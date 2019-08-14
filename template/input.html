@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    .three{
+      font-size: 30px;
+      margin-top: 10px;
+      background-color: #14df88;
+      border-radius: 10px;
+    }
+
+    .one, .two{
+      font-size: 20px;
+    }
+    </style>
+  </head>
+  <body>
+    <form action="./output" method="get">
+      {% csrf_token %}
+      <div class="one">
+        <label for="a">Enter table no.</label>
+        <input id="a" class="two" type="text" name="t1" placeholder="enter no."><br>
+      </div>
+      <div class="two">
+        <label for="b">Upto</label>
+        <select id="b" class="two" name="t2">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+        </select>
+      </div>
+      <input class="three" type="submit" value="submit">
+    </form>
+
+  </body>
+</html>
